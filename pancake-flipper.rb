@@ -1,17 +1,30 @@
-def params(line, index)
-  params = line.split
-  s = params[0]
-  k = params[1]
-  puts "Case ##{index}: #{s} #{k}"
+def get_s(line)
+  return line.split[0]
 end
 
-def test(limit, input)
+def get_k(line)
+  return line.split[1]
+end
+
+def answer(line, index)
+  s = "solution"
+  puts "Case ##{index}: #{s}"
+end
+
+def question(line, index)
+  s = get_s(line)
+  k = get_k(line)
+  puts "Question ##{index}: #{s} #{k}"
+end
+
+def print(limit, input)
   for i in (1..limit)
-    params(input[i], i)
+    question(input[i], i)
+    answer(input[i], i)
   end
 end
 
-lines = ARGF.readlines
-number_of_tests = lines[0].to_i
+input = ARGF.readlines
+number_of_tests = input[0].to_i
 
-test(number_of_tests, lines)
+print(number_of_tests, input)
