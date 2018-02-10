@@ -19,4 +19,5 @@ $ ruby pancake-flipper.rb < A-small-practice.in > output.txt
 ```
 
 #### Resources
-- Practice problems - https://code.google.com/codejam/past-contests
+- Code Jam website - https://code.google.com/codejam/past-contests
+- Problem 1: pancake-flipper - https://code.google.com/codejam/contest/3264486/dashboard
