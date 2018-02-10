@@ -43,6 +43,9 @@ def answer(line)
   if all_same_side_up(line)
     return "0"
   end
+  if s === k && !all_same_side_up(line)
+    return "IMPOSSIBLE"
+  end
   return "..."
 end
 
@@ -60,6 +63,7 @@ end
 def print(limit, input)
   check = []
   counts = Hash.new 0
+
   for i in (1..limit)
     format_question(input[i], i)
     format_answer(input[i], i)
