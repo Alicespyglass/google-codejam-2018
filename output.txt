@@ -3,43 +3,43 @@ Case #1: ...
 Question #2: +++++ 4
 Case #2: 0
 Question #3: -+-+- 4
-Case #3: ...
+Case #3: IMPOSSIBLE
 Question #4: +++ 3
 Case #4: 0
 Question #5: -+++- 3
-Case #5: ...
+Case #5: IMPOSSIBLE
 Question #6: ++--+-+-- 3
 Case #6: ...
 Question #7: ++++ 3
 Case #7: 0
 Question #8: -++- 2
-Case #8: ...
+Case #8: CHECK
 Question #9: --- 2
 Case #9: 0
 Question #10: -+-+ 3
-Case #10: ...
+Case #10: IMPOSSIBLE
 Question #11: +-+- 3
-Case #11: ...
+Case #11: IMPOSSIBLE
 Question #12: +-+ 3
 Case #12: IMPOSSIBLE
 Question #13: --+- 3
-Case #13: ...
+Case #13: IMPOSSIBLE
 Question #14: ++- 3
 Case #14: IMPOSSIBLE
 Question #15: ---------- 10
 Case #15: 0
 Question #16: +-++++-++ 5
-Case #16: ...
+Case #16: IMPOSSIBLE
 Question #17: --- 3
 Case #17: 0
 Question #18: -- 2
 Case #18: 0
 Question #19: +-++ 3
-Case #19: ...
+Case #19: IMPOSSIBLE
 Question #20: ---+ 3
 Case #20: ...
 Question #21: ++-+ 2
-Case #21: ...
+Case #21: CHECK
 Question #22: --------- 3
 Case #22: 0
 Question #23: +++ 2
@@ -47,7 +47,7 @@ Case #23: 0
 Question #24: ++++++++++ 10
 Case #24: 0
 Question #25: ++-+ 3
-Case #25: ...
+Case #25: IMPOSSIBLE
 Question #26: -------+-- 10
 Case #26: IMPOSSIBLE
 Question #27: -+++ 2
@@ -55,13 +55,13 @@ Case #27: ...
 Question #28: -+-+-+-+-+ 2
 Case #28: ...
 Question #29: -+-- 2
-Case #29: ...
+Case #29: CHECK
 Question #30: ---- 2
 Case #30: 0
 Question #31: -+- 2
-Case #31: ...
+Case #31: IMPOSSIBLE
 Question #32: +-+ 2
-Case #32: ...
+Case #32: IMPOSSIBLE
 Question #33: --++ 3
 Case #33: ...
 Question #34: ------ 6
@@ -77,7 +77,7 @@ Case #38: ...
 Question #39: ++-- 3
 Case #39: ...
 Question #40: +--+--++ 5
-Case #40: ...
+Case #40: IMPOSSIBLE
 Question #41: +-+-+-+-+- 2
 Case #41: ...
 Question #42: -++++++++- 2
@@ -103,9 +103,9 @@ Case #51: ...
 Question #52: +-+-+-+-+- 3
 Case #52: ...
 Question #53: -++++- 5
-Case #53: ...
+Case #53: IMPOSSIBLE
 Question #54: -+-- 3
-Case #54: ...
+Case #54: IMPOSSIBLE
 Question #55: -----+ 5
 Case #55: ...
 Question #56: -+-+ 2
@@ -123,23 +123,23 @@ Case #61: ...
 Question #62: -+++++++-+ 2
 Case #62: ...
 Question #63: -++++++++- 9
-Case #63: ...
+Case #63: IMPOSSIBLE
 Question #64: --+- 2
-Case #64: ...
+Case #64: CHECK
 Question #65: ---------- 2
 Case #65: 0
 Question #66: +-+-+-+ 3
 Case #66: ...
 Question #67: +--+ 2
-Case #67: ...
+Case #67: CHECK
 Question #68: -++++++++- 8
-Case #68: ...
+Case #68: IMPOSSIBLE
 Question #69: --++ 2
 Case #69: ...
 Question #70: -+- 3
 Case #70: IMPOSSIBLE
 Question #71: +-++++-+- 5
-Case #71: ...
+Case #71: IMPOSSIBLE
 Question #72: ++-++ 5
 Case #72: IMPOSSIBLE
 Question #73: ++++++++- 6
@@ -153,17 +153,17 @@ Case #76: ...
 Question #77: ++--+-- 3
 Case #77: ...
 Question #78: -+++--+ 4
-Case #78: ...
+Case #78: IMPOSSIBLE
 Question #79: ------++ 6
 Case #79: ...
 Question #80: +++- 2
 Case #80: ...
 Question #81: +-++ 2
-Case #81: ...
+Case #81: CHECK
 Question #82: ++-- 2
 Case #82: ...
 Question #83: +--+ 3
-Case #83: ...
+Case #83: IMPOSSIBLE
 Question #84: --+ 3
 Case #84: IMPOSSIBLE
 Question #85: +-- 3
@@ -179,7 +179,7 @@ Case #89: ...
 Question #90: -+++ 3
 Case #90: ...
 Question #91: -++- 3
-Case #91: ...
+Case #91: IMPOSSIBLE
 Question #92: +++++++++ 8
 Case #92: 0
 Question #93: --------+ 8
@@ -198,4 +198,4 @@ Question #99: ---- 3
 Case #99: 0
 Question #100: +-+-+-+-+ 3
 Case #100: ...
-{"..."=>69, "0"=>20, "IMPOSSIBLE"=>11}
+{"..."=>44, "0"=>20, "IMPOSSIBLE"=>30, "CHECK"=>6}
