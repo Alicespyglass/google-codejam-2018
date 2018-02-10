@@ -58,10 +58,18 @@ def format_question(line, index)
 end
 
 def print(limit, input)
+  check = []
+  counts = Hash.new 0
   for i in (1..limit)
     format_question(input[i], i)
     format_answer(input[i], i)
+    check.push(answer(input[i]))
   end
+
+  check.each do | result |
+    counts[result] += 1
+  end
+  puts counts
 end
 
 input = ARGF.readlines
