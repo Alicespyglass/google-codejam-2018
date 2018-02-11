@@ -70,18 +70,26 @@ def answer(line)
   s = get_s(line)
   k = get_k(line)
   n = non_consecutive_sides_up(line)
-
-  plus_sides = count_sides(line, "+")
-  minus_sides = count_sides(line, "-")
+  c = consecutive_sides_up(line)
+  plus = count_sides(line, "+")
+  minus = count_sides(line, "-")
 
   if all_same_side_up(line)
     return "0"
   elsif s_equals_k(s,k) && !all_same_side_up(line)
-    return "IMPOSSIBLE"
-  elsif k > s/2 && n > 1
-    return "IMPOSSIBLE"
-  elsif (consecutive_sides_up(line) === k - 1) && (non_consecutive_sides_up(line) === 2)
+    return "IMPOSSIBLE 1"
+  elsif k > (s/2.to_f).ceil && n > 1
+    return "IMPOSSIBLE 2"
+  elsif c === 0 && k > 1
+    return "IMPOSSIBLE 3"
+  elsif (c === k - 1) && (n === 2)
     return "CHECK"
+  elsif plus === k && n <= 2
+      return "1"
+  elsif minus === k && n <= 2
+      return "1"
+  elsif n === 1 && (plus || minus) != k
+    return "IMPOSSIBLE 4"
   else return "..."
   end
 end
@@ -116,7 +124,4 @@ end
 input = ARGF.readlines
 number_of_tests = input[0].to_i
 
-consecutive_sides_up(input[3])
-non_consecutive_sides_up(input[3])
 print(number_of_tests, input)
-# count_sides(input[2], "+")
